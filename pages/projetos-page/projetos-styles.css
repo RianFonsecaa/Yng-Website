@@ -1,0 +1,94 @@
+.projetos-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 137px;
+}
+
+.projetos-header {
+  display: flex;
+  padding: 40px 112px 60px;
+  gap: 233px;
+}
+
+.projetos-header .projetos-tittle h1 {
+  font-family: "IvyPresto", sans-serif;
+  font-weight: lighter;
+  font-size: 120px;
+  line-height: 1;
+  margin: 0;
+}
+
+.projetos-header .projetos-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projetos-header .projetos-text p {
+  font-family: "Degular-Light", sans-serif;
+  font-weight: lighter;
+  font-size: 32px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.projetos-section .projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 25px;
+  gap: 50px;
+}
+
+.projetos-section .projetos-grid div {
+  display: flex;
+  flex-direction: column;
+}
+
+.projetos-section .projetos-grid div h1 {
+  font-family: "Degular-Semibold", sans-serif;
+  font-size: 48px;
+  padding-top: 20px;
+  line-height: 1;
+  margin: 0;
+}
+
+.projetos-section .projetos-grid div p {
+  font-family: "Degular-Regular", sans-serif;
+  font-size: 24px;
+  margin: 0;
+}
+
+.projetos-section .projetos-grid .card {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.projetos-section .projetos-grid .card .bottom-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 6px;
+  background-color: #e74f3d;
+  transition: width 0.3s ease;
+  z-index: 3;
+}
+
+.projetos-section .projetos-grid .card:hover .bottom-border {
+  width: 100%;
+}
+
+.projetos-section .projetos-grid .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom; /* <-- força o recorte pelo final */
+  display: block;
+  transition: transform 0.5s ease;
+}
+.projetos-section .projetos-grid .card:hover img {
+  transform: scale(1.1);
+}

@@ -141,7 +141,7 @@
   overflow: hidden;
 }
 
-.projetos-section .projetos-grid .card .top-border {
+.projetos-section .projetos-grid .card .bottom-border {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -152,7 +152,7 @@
   z-index: 3;
 }
 
-.projetos-section .projetos-grid .card:hover .top-border {
+.projetos-section .projetos-grid .card:hover .bottom-border {
   width: 100%;
 }
 
