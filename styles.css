@@ -1,0 +1,192 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+  font-family: "Degular-Light";
+  src: url("/fonts/Degular-Light.otf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Degular-Regular";
+  src: url("/fonts/Degular-Regular.otf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Degular-Medium";
+  src: url("/fonts/Degular-Medium.otf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Degular-Semibold";
+  src: url("/fonts/Degular-Semibold.otf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IvyPresto";
+  src: url("/fonts/ivy-presto-headline-thin.otf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("/fonts/Poppins-Light.ttf") format("truetype");
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  font-family: "Degular-Light", sans-serif;
+  font-weight: 300;
+}
+
+section,
+header {
+  margin-bottom: 48px;
+}
+
+header {
+  margin-top: 48px;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 105px;
+}
+
+.header-section ul {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.header-section ul .nav-link {
+  font-family: "Degular-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+}
+
+.header-section ul .nav-link:hover {
+  color: #e74f3d;
+}
+
+.header-section ul .nav-item:last-child .nav-link {
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 38px;
+  padding-left: 38px;
+  width: 180px;
+  height: 50px;
+}
+
+.header-section ul .nav-item:last-child .nav-link:hover {
+  background-color: #e74f3d;
+}
+
+.header-section .navbar-brand img {
+  width: 280px;
+  height: 110px;
+  object-fit: contain;
+}
+
+.owl-carousel .card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+  transition: all 0.03s ease;
+}
+
+.owl-carousel .card img {
+  width: 280px;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+  transition: all 0.4s ease;
+}
+
+.owl-carousel .card:hover img {
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.owl-carousel .card .card-top-text {
+  position: absolute;
+  top: 0;
+  padding-left: 23px;
+  padding-top: 22px;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.owl-carousel .card:hover .card-top-text {
+  opacity: 1;
+}
+
+.owl-carousel .card .card-top-text h5 {
+  font-size: 28px;
+  font-family: "Degular-Regular", sans-serif;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 0;
+}
+
+.owl-carousel .card .card-top-text p {
+  font-family: "Degular-Light", sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #919191;
+  margin-bottom: 0;
+}
+
+.owl-carousel .card .card-bottom-text {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: opacity 0.2s ease;
+}
+
+.owl-carousel .card:hover .card-bottom-text {
+  opacity: 0;
+}
+
+.owl-carousel .card .card-bottom-text h5 {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Degular-Regular", sans-serif;
+  font-weight: 400;
+  color: #e74f3d;
+}
+
+.owl-carousel .card .card-bottom-text p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #707070;
+}
+
+.equipa-section .carousel-button {
+  display: flex;
+  justify-content: end;
+  margin-right: 40px;
+}
+
+.equipa-section .carousel-button .btn-nav {
+  background-color: transparent;
+  border: none;
+}
