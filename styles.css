@@ -42,8 +42,11 @@ body {
   padding-top: 0;
   font-family: "Degular-Light", sans-serif;
   font-weight: 300;
+  height: 100%;
 }
-
+main {
+  flex: 1;
+}
 section,
 header {
   margin-bottom: 48px;
@@ -191,10 +194,44 @@ header {
   border: none;
 }
 
+.projetos-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border: 1px solid black;
+  padding: 16px 0px;
+  height: 85px;
+  width: 312px;
+  background-color: transparent;
+  gap: 27px;
+  margin: 95px 0px 123px 0px;
+}
+
+.projetos-button a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 40px;
+  font-weight: lighter;
+  transition: all 0.2s ease;
+}
+
+.projetos-button a:hover {
+  color: #e74f3d;
+  transform: scale(1.05);
+}
+
+.projetos-button img {
+  width: 45px;
+  height: 45px;
+}
+
 .footer-section {
   background-color: #e5e5e5;
   position: relative;
   margin-bottom: 0;
+  margin-top: auto;
 }
 
 .footer-section .footer-content {

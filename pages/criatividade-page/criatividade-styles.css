@@ -1,0 +1,99 @@
+.criatividade-section {
+}
+
+.criatividade-section .criatividade-tittle {
+  font-family: "IvyPresto", sans-serif;
+  font-weight: lighter;
+  font-size: 120px;
+  padding: 40px 0 100px 90px;
+}
+
+.criatividade-section img {
+  width: 100%;
+  height: 860px;
+  object-fit: cover;
+}
+
+.criatividade-section .criatividade-content {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  margin: 76px 72px 0 124px;
+}
+
+.criatividade-section .criatividade-content div:first-child .content-text img {
+  width: 612px;
+  height: 915px;
+  margin-top: -50px;
+}
+
+.criatividade-section .criatividade-content .content-text img {
+  width: 612px;
+  height: 915px;
+}
+
+.criatividade-section .criatividade-content div:last-child .content-text img {
+  filter: invert(100%);
+}
+
+.criatividade-section .criatividade-content div:first-child .content-tittle h1 {
+  font-family: "IvyPresto", sans-serif;
+  font-weight: lighter;
+  font-size: 90px;
+  margin: 0;
+}
+
+.criatividade-section .criatividade-content .content-tittle h1 {
+  font-family: "IvyPresto", sans-serif;
+  font-weight: lighter;
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+.criatividade-section .criatividade-content .content-text {
+  display: flex;
+  flex-direction: row;
+}
+
+.criatividade-section
+  .criatividade-content
+  div:first-child
+  .content-text
+  .content-paragraphs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 80px 97px 0 104px;
+}
+
+.criatividade-section .criatividade-content .content-text .content-paragraphs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 0px 97px 0 104px;
+}
+
+.criatividade-section
+  .criatividade-content
+  .content-text
+  .content-paragraphs
+  div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.criatividade-section
+  .criatividade-content
+  .content-text
+  .content-paragraphs
+  div
+  p {
+  font-family: "Degular-Light", sans-serif;
+  font-size: 32px;
+  font-weight: lighter;
+  margin: 0;
+  line-height: 1.3;
+}
