@@ -1,0 +1,152 @@
+.ativacao-section {
+  padding: 60px 100px 152px 112px;
+  display: grid;
+  grid-template-columns: 650px 990px;
+  justify-content: space-between;
+}
+
+.ativacao-section .ativacao-tittle {
+  position: relative;
+}
+
+.ativacao-section .ativacao-tittle h1 {
+  font-family: "IvyPresto", sans-serif;
+  font-weight: lighter;
+  font-size: 120px;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.ativacao-section .ativacao-tittle img {
+  width: 575px;
+  height: 788px;
+  padding-left: 38px;
+  margin-top: 300px;
+}
+
+.ativacao-section .ativacao-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+.ativacao-section .ativacao-text div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ativacao-section .ativacao-text div p {
+  font-family: "Degular-Light", sans-serif;
+  font-size: 32px;
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.vantagens-section {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0px 100px 112px;
+}
+
+.vantagens-section .vantagens-tittle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.vantagens-section .vantagens-tittle h1 {
+  font-family: "IvyPresto", sans-serif;
+  font-weight: lighter;
+  font-size: 60px;
+  text-align: center;
+}
+
+.vantagens-section .vantagens-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vantagens-section .vantagens-text p {
+  font-family: "Degular-Light", sans-serif;
+  font-size: 32px;
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.ativacao-carmen-section {
+  display: flex;
+}
+
+.ativacao-carmen-section img {
+  height: 1000px;
+  width: 650px;
+  object-fit: cover;
+}
+
+.ativacao-carmen-section .ativacao-carmen-text {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 76px 44px 76px 76px;
+}
+
+.ativacao-carmen-section .ativacao-carmen-text h1 {
+  font-family: "IvyPresto", sans-serif;
+  font-weight: lighter;
+  font-size: 48px;
+}
+
+.ativacao-carmen-section .ativacao-carmen-text .ativacao-carmen-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 86px;
+}
+
+.ativacao-carmen-section .ativacao-carmen-text .ativacao-carmen-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ativacao-carmen-section .ativacao-carmen-text .ativacao-carmen-grid div p {
+  font-family: "Degular-Light", sans-serif;
+  font-size: 32px;
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.projetos-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border: 1px solid black;
+  padding: 16px 0px;
+  height: 85px;
+  width: 312px;
+  background-color: transparent;
+  gap: 27px;
+  margin: 95px 0px 123px 0px;
+}
+
+.projetos-button a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 40px;
+  font-weight: lighter;
+  transition: all 0.2s ease;
+}
+
+.projetos-button a:hover {
+  color: #e74f3d;
+  transform: scale(1.05);
+}
+
+.projetos-button img {
+  width: 45px;
+  height: 45px;
+}
