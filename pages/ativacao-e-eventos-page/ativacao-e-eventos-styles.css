@@ -10,7 +10,7 @@
 }
 
 .ativacao-section .ativacao-tittle h1 {
-  font-family: "IvyPresto", sans-serif;
+  font-family: "IvyPresto-Thin", sans-serif;
   font-weight: lighter;
   font-size: 120px;
   position: absolute;
@@ -37,13 +37,6 @@
   gap: 20px;
 }
 
-.ativacao-section .ativacao-text div p {
-  font-family: "Degular-Light", sans-serif;
-  font-size: 32px;
-  margin-bottom: 0;
-  line-height: 1.3;
-}
-
 .vantagens-section {
   display: flex;
   flex-direction: column;
@@ -57,7 +50,7 @@
   justify-content: center;
 }
 .vantagens-section .vantagens-tittle h1 {
-  font-family: "IvyPresto", sans-serif;
+  font-family: "IvyPresto-Thin", sans-serif;
   font-weight: lighter;
   font-size: 60px;
   text-align: center;
@@ -67,13 +60,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.vantagens-section .vantagens-text p {
-  font-family: "Degular-Light", sans-serif;
-  font-size: 32px;
-  margin-bottom: 0;
-  line-height: 1.3;
 }
 
 .ativacao-carmen-section {
@@ -94,8 +80,8 @@
 }
 
 .ativacao-carmen-section .ativacao-carmen-text h1 {
-  font-family: "IvyPresto", sans-serif;
-  font-weight: lighter;
+  font-family: "IvyPresto-Thin", sans-serif;
+  font-weight: 100;
   font-size: 48px;
 }
 
@@ -109,11 +95,4 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.ativacao-carmen-section .ativacao-carmen-text .ativacao-carmen-grid div p {
-  font-family: "Degular-Light", sans-serif;
-  font-size: 32px;
-  margin-bottom: 0;
-  line-height: 1.3;
 }

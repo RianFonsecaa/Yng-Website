@@ -11,8 +11,8 @@
 }
 
 .projetos-header .projetos-tittle h1 {
-  font-family: "IvyPresto", sans-serif;
-  font-weight: lighter;
+  font-family: "IvyPresto-Thin", sans-serif;
+  font-weight: 100;
   font-size: 120px;
   line-height: 1;
   margin: 0;
@@ -22,14 +22,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.projetos-header .projetos-text p {
-  font-family: "Degular-Light", sans-serif;
-  font-weight: lighter;
-  font-size: 32px;
-  margin: 0;
-  line-height: 1.4;
 }
 
 .projetos-section .projetos-grid {
@@ -45,16 +37,18 @@
 }
 
 .projetos-section .projetos-grid div h1 {
-  font-family: "Degular-Semibold", sans-serif;
+  font-family: "Degular-Variable", sans-serif;
   font-size: 48px;
+  font-weight: 600;
   padding-top: 20px;
   line-height: 1;
   margin: 0;
 }
 
 .projetos-section .projetos-grid div p {
-  font-family: "Degular-Regular", sans-serif;
+  font-family: "Degular-Variable", sans-serif;
   font-size: 24px;
+  font-weight: 400;
   margin: 0;
 }
 

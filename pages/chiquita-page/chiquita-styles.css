@@ -1,0 +1,288 @@
+h1 {
+  font-family: "IvyPresto-Semibold", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0;
+}
+
+.apresentacao-section .right-text p {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+}
+
+.video-section {
+  margin: 0px 100px;
+}
+
+.video-section:last-of-type {
+  margin: 60px 100px 95px;
+}
+
+.video-section video {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.apresentacao-section {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin: 60px 100px 0px;
+}
+
+.apresentacao-section .apresentacao-content {
+  display: flex;
+  flex-direction: row;
+  gap: 130px;
+}
+
+.apresentacao-section .apresentacao-content .left-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 800px;
+  padding-right: 20px;
+}
+
+.apresentacao-section .apresentacao-content .left-text strong {
+  font-weight: 600;
+}
+
+.apresentacao-section .apresentacao-content .right-text {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.apresentacao-section .apresentacao-content .right-text .info-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.apresentacao-section .apresentacao-content-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 130px;
+}
+
+.apresentacao-section .apresentacao-content-2 .left-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.apresentacao-section .apresentacao-content-2 .right-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.apresentacao-section .apresentacao-content-2 .left-text img {
+  width: 100%;
+  height: 810px;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+
+.apresentacao-section .apresentacao-content-2 .right-text img {
+  width: 100%;
+  height: 810px;
+  object-fit: cover;
+  margin-bottom: 60px;
+}
+
+.apresentacao-section .apresentacao-content-2 .right-text .info-row {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.apresentacao-section .apresentacao-content-2 .right-text .info-row div {
+  flex: 1;
+}
+
+.apresentacao-section .apresentacao-content-2 .right-text .info-row h1 {
+  font-family: "IvyPresto-Semibold", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0;
+}
+
+.apresentacao-section .apresentacao-content-2 .right-text .info-row p {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+}
+
+.apresentacao-section .apresentacao-content-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.apresentacao-section .apresentacao-content-3 img {
+  height: 1768px;
+}
+
+.apresentacao-section .apresentacao-content-3 .text-row {
+  display: flex;
+  flex-direction: row;
+  gap: 130px;
+}
+
+.apresentacao-section .apresentacao-content-3 .left-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.apresentacao-section .apresentacao-content-3 .right-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.apresentacao-section .apresentacao-content-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.apresentacao-section .apresentacao-content-4 img {
+  height: 620px;
+}
+
+.apresentacao-section .apresentacao-content-4 .text-row {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.apresentacao-section .apresentacao-content-4 .text-row .right-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex: 0.5;
+  padding: 40px 0px 0px 180px;
+  gap: 20px;
+}
+
+.apresentacao-section .apresentacao-content-4 .text-row .right-text h1 {
+  font-size: 36px;
+}
+
+.apresentacao-section .apresentacao-content-4 .text-row .right-text p {
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.apresentacao-section .apresentacao-content-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.apresentacao-section .apresentacao-content-5 img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.apresentacao-section .apresentacao-content-5 .text-row {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+}
+
+.apresentacao-section .apresentacao-content-5 .text-row .left-text {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  gap: 20px;
+  padding-right: 100px;
+}
+
+.apresentacao-section .apresentacao-content-5 .text-row .left-text h1 {
+  font-size: 36px;
+}
+
+.apresentacao-section .apresentacao-content-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.apresentacao-section .apresentacao-content-6 .img-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.apresentacao-section .apresentacao-content-6 .img-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  height: 990px;
+}
+
+.apresentacao-section .apresentacao-content-6 .img-row img {
+  flex: 1;
+  width: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+.apresentacao-section .apresentacao-content-6 .text-row {
+  display: flex;
+  flex-direction: row;
+  gap: 130px;
+}
+
+.apresentacao-section .apresentacao-content-6 .text-row .left-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 60px;
+  flex: 1;
+}
+
+.apresentacao-section .apresentacao-content-6 .text-row .left-text div {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+}
+
+.apresentacao-section .apresentacao-content-6 .text-row .left-text div img {
+  width: 40px;
+  height: 40px;
+}
+
+.apresentacao-section .apresentacao-content-6 .text-row .right-img {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.apresentacao-section .apresentacao-content-6 .text-row .right-img img {
+  height: 800px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.apresentacao-section
+  .apresentacao-content-6
+  .text-row
+  .right-img
+  img:last-of-type {
+  height: 100px;
+  width: 673px;
+  object-fit: cover;
+}

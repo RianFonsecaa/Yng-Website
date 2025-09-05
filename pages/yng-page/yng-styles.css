@@ -5,8 +5,8 @@
 }
 
 .metricas-section .metricas-tittle h1 {
-  font-family: "IvyPresto", sans-serif;
-  font-weight: lighter;
+  font-family: "IvyPresto-Thin", sans-serif;
+  font-weight: 100;
   font-size: 120px;
   line-height: 1;
   margin: 0;
@@ -19,8 +19,8 @@
 }
 
 .metricas-section .metricas-text p {
-  font-family: "Degular-Light", sans-serif;
-  font-weight: lighter;
+  font-family: "Degular-Variable", sans-serif;
+  font-weight: 100;
   font-size: 32px;
   margin: 0;
 }
@@ -33,14 +33,15 @@
 }
 
 .metricas-section .metricas-text .metricas-grid div h1 {
-  font-family: "Degular-Regular", sans-serif;
+  font-family: "Degular-Variable", sans-serif;
   font-weight: 400;
   font-size: 60px;
   margin: 0;
 }
 
 .metricas-section .metricas-text .metricas-grid div p {
-  font-family: "Degular-Light", sans-serif;
+  font-family: "Degular-Variable", sans-serif;
+  font-weight: 100;
   font-size: 24px;
   line-height: 1;
 }
@@ -76,8 +77,8 @@
   margin-bottom: 68px;
 }
 .apresentacao-section .apresentacao-text .apresentacao-tittle h1 {
-  font-family: "IvyPresto", sans-serif;
-  font-weight: lighter;
+  font-family: "IvyPresto-Thin", sans-serif;
+  font-weight: 100;
   font-size: 120px;
   margin-bottom: 0;
   padding-left: 219px;
@@ -88,11 +89,13 @@
 }
 
 .apresentacao-section .apresentacao-text p {
-  font-family: "Degular-Light", sans-serif;
+  font-family: "Degular-Variable", sans-serif;
+  font-weight: 100;
   font-size: 32px;
+  color: white;
   line-height: 1.3;
   margin: 0;
-  width: 933px;
+  width: 900px;
 }
 
 .divider {

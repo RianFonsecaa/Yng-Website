@@ -1,9 +1,6 @@
-.criatividade-section {
-}
-
 .criatividade-section .criatividade-tittle {
-  font-family: "IvyPresto", sans-serif;
-  font-weight: lighter;
+  font-family: "IvyPresto-Thin", sans-serif;
+  font-weight: 100;
   font-size: 120px;
   padding: 40px 0 100px 90px;
 }
@@ -37,15 +34,15 @@
 }
 
 .criatividade-section .criatividade-content div:first-child .content-tittle h1 {
-  font-family: "IvyPresto", sans-serif;
-  font-weight: lighter;
+  font-family: "IvyPresto-Thin", sans-serif;
+  font-weight: 100;
   font-size: 90px;
   margin: 0;
 }
 
 .criatividade-section .criatividade-content .content-tittle h1 {
-  font-family: "IvyPresto", sans-serif;
-  font-weight: lighter;
+  font-family: "IvyPresto-Thin", sans-serif;
+  font-weight: 100;
   font-size: 48px;
   margin-bottom: 60px;
 }
@@ -83,17 +80,4 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.criatividade-section
-  .criatividade-content
-  .content-text
-  .content-paragraphs
-  div
-  p {
-  font-family: "Degular-Light", sans-serif;
-  font-size: 32px;
-  font-weight: lighter;
-  margin: 0;
-  line-height: 1.3;
 }

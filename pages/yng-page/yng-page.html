@@ -27,7 +27,7 @@
       <nav class="navbar navbar-expand-lg navbar-light container-fluid">
         <a class="navbar-brand" href="#">
           <img
-            src="../../img/logo-yng.jpg"
+            src="/img/logo-yng.jpg"
             alt="Logo da empresa Young Network Group"
           />
         </a>
@@ -286,7 +286,7 @@
         </div>
       </div>
       <div class="ano-tittle">
-        <img src="../../img/copyright-2025.png" alt="Imagem copyright 2025" />
+        <img src="/img/copyright-2025.png" alt="Imagem copyright 2025" />
       </div>
     </footer>
 
@@ -303,6 +303,15 @@
           nav: false,
           dots: false,
           responsive: {
+            // Em telas de 0px pra cima -> mostra 1 item
+            0: {
+              items: 1,
+            },
+            // Em telas de 600px pra cima -> mostra 3 itens
+            600: {
+              items: 3,
+            },
+            // Em telas de 1000px pra cima -> mostra 6 itens
             1000: {
               items: 6,
             },
