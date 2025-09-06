@@ -18,9 +18,13 @@
   margin: 76px 72px 0 124px;
 }
 
+.criatividade-section .criatividade-content div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .criatividade-section .criatividade-content div:first-child .content-text img {
-  width: 612px;
-  height: 915px;
   margin-top: -50px;
 }
 
@@ -44,7 +48,6 @@
   font-family: "IvyPresto-Thin", sans-serif;
   font-weight: 100;
   font-size: 48px;
-  margin-bottom: 60px;
 }
 
 .criatividade-section .criatividade-content .content-text {
@@ -57,10 +60,6 @@
   div:first-child
   .content-text
   .content-paragraphs {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
   padding: 80px 97px 0 104px;
 }
 
@@ -80,4 +79,270 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .criatividade-section .criatividade-tittle {
+    font-size: 100px;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    div:first-child
+    .content-tittle
+    h1 {
+    font-size: 70px;
+  }
+
+  .criatividade-section .criatividade-content .content-tittle h1 {
+    font-size: 40px;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    .content-text
+    .content-paragraphs
+    div
+    p {
+    font-size: 24px;
+  }
+  .criatividade-section .criatividade-tittle {
+    font-size: 100px;
+    text-align: center;
+    padding: 30px 0 80px 0;
+  }
+
+  .criatividade-section img {
+    height: 700px;
+  }
+
+  .criatividade-section .criatividade-content {
+    gap: 120px;
+    margin: 60px 40px 0 40px;
+  }
+
+  .criatividade-section .criatividade-content {
+    gap: 120px;
+    margin: 60px 40px 0 40px;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    div:first-child
+    .content-tittle
+    h1 {
+    font-size: 70px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .criatividade-section .criatividade-content .content-tittle h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .criatividade-section .criatividade-content .content-text img {
+    width: 450px;
+    height: auto;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    .content-text
+    .content-paragraphs {
+    padding: 40px 40px 0 40px;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    div:first-child
+    .content-text
+    .content-paragraphs {
+    padding: 40px 40px 0 40px;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    .content-text
+    .content-paragraphs {
+    padding: 40px 40px 0 40px;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    .content-text
+    .content-paragraphs
+    div
+    p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .criatividade-section .criatividade-tittle {
+    font-size: 80px;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    div:first-child
+    .content-tittle
+    h1 {
+    font-size: 55px;
+  }
+
+  .criatividade-section .criatividade-content .content-tittle h1 {
+    font-size: 32px;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    .content-text
+    .content-paragraphs
+    div
+    p {
+    font-size: 20px;
+  }
+
+  .criatividade-section .criatividade-tittle {
+    font-size: 80px;
+    text-align: center;
+    padding: 20px 0 60px 0;
+  }
+
+  .criatividade-section img {
+    height: 500px;
+  }
+
+  .criatividade-section .criatividade-content {
+    gap: 80px;
+    margin: 40px 20px 0 20px;
+  }
+
+  .criatividade-section .criatividade-content .content-text {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    div:first-child
+    .content-tittle
+    h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .criatividade-section .criatividade-content .content-tittle h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    div:first-child
+    .content-tittle
+    h1 {
+    margin: 0 !important;
+  }
+
+  .criatividade-section .criatividade-content .content-text img {
+    width: 100%;
+    max-width: 400px;
+    height: 533px;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    div:first-child
+    .content-text
+    img {
+    margin: 0;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    .content-text
+    .content-paragraphs {
+    padding: 0;
+    gap: 24px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .criatividade-section .criatividade-tittle {
+    font-size: 60px;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    div:first-child
+    .content-tittle
+    h1 {
+    font-size: 38px;
+  }
+
+  .criatividade-section .criatividade-content .content-tittle h1 {
+    font-size: 26px;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    .content-text
+    .content-paragraphs
+    div
+    p {
+    font-size: 18px;
+  }
+
+  .criatividade-section .criatividade-tittle {
+    font-size: 60px;
+    text-align: center;
+    padding: 16px 0 40px 0;
+  }
+
+  .criatividade-section img {
+    height: 320px;
+  }
+
+  .criatividade-section .criatividade-content {
+    gap: 40px;
+    margin: 20px 12px 0 12px;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    div:first-child
+    .content-tittle
+    h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .criatividade-section .criatividade-content .content-tittle h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  .criatividade-section .criatividade-content .content-text img {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+  }
+
+  .criatividade-section
+    .criatividade-content
+    .content-text
+    .content-paragraphs {
+    gap: 16px;
+    padding: 0;
+  }
+
+  .projetos-button a {
+    font-size: 16px;
+  }
 }

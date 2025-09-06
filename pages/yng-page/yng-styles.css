@@ -201,9 +201,7 @@
   .metricas-section .metricas-tittle h1 {
     font-size: 70px;
   }
-  .metricas-section .metricas-text p {
-    font-size: 22px;
-  }
+
   .metricas-section .metricas-text .metricas-grid div h1 {
     font-size: 38px;
   }
@@ -231,10 +229,6 @@
   .apresentacao-section .apresentacao-text .apresentacao-tittle h1:last-child {
     padding-left: 0;
   }
-  .apresentacao-section .apresentacao-text p {
-    font-size: 22px;
-    max-width: 100%;
-  }
 
   .equipa-section .equipa-header .tittle-section {
     font-size: 70px;
@@ -253,18 +247,18 @@
     font-size: 45px;
     text-align: center;
   }
-  .metricas-section .metricas-text p {
-    font-size: 18px;
-  }
   .metricas-section .metricas-text .metricas-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
   .metricas-section .metricas-text .metricas-grid div h1 {
     font-size: 28px;
+    text-align: center;
   }
+
   .metricas-section .metricas-text .metricas-grid div p {
-    font-size: 16px;
+    text-align: center;
   }
 
   .apresentacao-section {
@@ -286,10 +280,6 @@
   }
   .apresentacao-section .apresentacao-text .apresentacao-tittle h1:last-child {
     padding-left: 0;
-  }
-  .apresentacao-section .apresentacao-text p {
-    font-size: 18px;
-    line-height: 1.2;
   }
 
   .parceiros-section div {

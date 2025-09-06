@@ -525,6 +525,10 @@ button {
     margin: 12px 20px;
   }
 
+  .hero-section video {
+    height: 400px;
+  }
+
   .tittle-section {
     font-size: 70px;
     white-space: normal;
@@ -624,6 +628,11 @@ button {
   .quem-somos-section {
     margin: 8px 12px;
   }
+
+  .hero-section video {
+    height: 250px;
+  }
+
   .tittle-section {
     font-size: 50px;
   }
