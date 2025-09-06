@@ -1,8 +1,7 @@
 .ativacao-section {
   padding: 60px 100px 152px 112px;
-  display: grid;
-  grid-template-columns: 650px 990px;
-  justify-content: space-between;
+  display: flex;
+  gap: 104px;
 }
 
 .ativacao-section .ativacao-tittle {
@@ -49,6 +48,7 @@
   display: flex;
   justify-content: center;
 }
+
 .vantagens-section .vantagens-tittle h1 {
   font-family: "IvyPresto-Thin", sans-serif;
   font-weight: lighter;
@@ -64,6 +64,8 @@
 
 .ativacao-carmen-section {
   display: flex;
+  padding: 76px 44px 76px 76px;
+  gap: 80px;
 }
 
 .ativacao-carmen-section img {
@@ -76,7 +78,6 @@
   display: flex;
   flex-direction: column;
   gap: 80px;
-  padding: 76px 44px 76px 76px;
 }
 
 .ativacao-carmen-section .ativacao-carmen-text h1 {
@@ -85,14 +86,225 @@
   font-size: 48px;
 }
 
-.ativacao-carmen-section .ativacao-carmen-text .ativacao-carmen-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 86px;
+.ativacao-carmen-section .ativacao-carmen-text .ativacao-carmen-paragraphs {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex: 1;
 }
 
-.ativacao-carmen-section .ativacao-carmen-text .ativacao-carmen-grid div {
+.ativacao-carmen-section .ativacao-carmen-text .ativacao-carmen-paragraphs div {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .ativacao-section {
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 60px 120px 60px;
+  }
+
+  .ativacao-section .ativacao-tittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ativacao-section .ativacao-tittle h1 {
+    font-size: 100px;
+    position: relative;
+    text-align: center;
+  }
+
+  .ativacao-section .ativacao-tittle img {
+    height: 500px;
+    width: 770px;
+    padding-left: 0;
+    object-fit: cover;
+    margin-top: 0;
+  }
+
+  .ativacao-section .ativacao-text {
+    margin-top: 0;
+  }
+
+  .ativacao-section .ativacao-text div p {
+    font-size: 24px;
+  }
+
+  .vantagens-section {
+    padding: 0px 60px 80px;
+  }
+
+  .vantagens-section .vantagens-tittle h1 {
+    font-size: 50px;
+  }
+
+  .vantagens-section .vantagens-text p {
+    font-size: 24px;
+  }
+
+  .ativacao-carmen-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 44px 60px 44px;
+  }
+
+  .ativacao-carmen-section img {
+    height: 500px;
+    width: 770px;
+    object-fit: cover;
+  }
+
+  .ativacao-carmen-section .ativacao-carmen-text {
+    gap: 60px;
+  }
+
+  .ativacao-carmen-section .ativacao-carmen-text h1 {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .ativacao-carmen-section .ativacao-carmen-text .ativacao-carmen-paragraphs {
+    gap: 40px;
+  }
+
+  .ativacao-carmen-section
+    .ativacao-carmen-text
+    .ativacao-carmen-paragraphs
+    div
+    p {
+    font-size: 24px;
+  }
+
+  .projetos-button a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .ativacao-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 30px 80px 30px;
+  }
+
+  .ativacao-section .ativacao-tittle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ativacao-section .ativacao-tittle h1 {
+    font-size: 80px;
+    text-align: center;
+    position: relative;
+  }
+
+  .ativacao-section .ativacao-tittle img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto 20px auto;
+    padding-left: 0;
+  }
+
+  .ativacao-section .ativacao-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+  }
+
+  .vantagens-section {
+    padding: 0 30px 60px;
+    gap: 20px;
+  }
+
+  .ativacao-carmen-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 30px 40px 30px;
+  }
+
+  .ativacao-carmen-section img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .ativacao-carmen-section .ativacao-carmen-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ativacao-section {
+    gap: 16px;
+    padding: 20px 12px 40px 12px;
+  }
+
+  .ativacao-section .ativacao-tittle h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .ativacao-section .ativacao-tittle img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .ativacao-section .ativacao-text {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .vantagens-section {
+    padding: 0 12px 40px;
+    gap: 16px;
+  }
+
+  .vantagens-section .vantagens-tittle h1 {
+    font-size: 32px;
+  }
+
+  .ativacao-carmen-section {
+    padding: 20px 12px 20px 12px;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .ativacao-carmen-section img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .ativacao-carmen-section .ativacao-carmen-text .ativacao-carmen-paragraphs {
+    flex-direction: column;
+  }
+
+  .ativacao-carmen-section .ativacao-carmen-text h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .projetos-button a {
+    font-size: 16px;
+  }
 }

@@ -7,7 +7,8 @@
 .projetos-header {
   display: flex;
   padding: 40px 112px 60px;
-  gap: 233px;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .projetos-header .projetos-tittle h1 {
@@ -22,6 +23,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 933px;
 }
 
 .projetos-section .projetos-grid {
@@ -85,4 +87,126 @@
 }
 .projetos-section .projetos-grid .card:hover img {
   transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+  .projetos-header {
+    padding: 40px 60px 60px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .projetos-header .projetos-tittle h1 {
+    font-size: 100px;
+  }
+
+  .projetos-header .projetos-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .projetos-header .projetos-text p {
+    flex: 1;
+    margin: 0;
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .projetos-section .projetos-grid {
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .projetos-section .projetos-grid div h1 {
+    font-size: 42px;
+  }
+
+  .projetos-section .projetos-grid div p {
+    font-size: 16px;
+  }
+
+  .projetos-section .projetos-grid .card {
+    height: 550px;
+  }
+}
+
+@media (max-width: 900px) {
+  .projetos-header {
+    padding: 30px 20px 30px;
+  }
+
+  .projetos-header .projetos-tittle h1 {
+    font-size: 80px;
+    width: 100%;
+    margin-bottom: 8px;
+    word-break: break-word;
+  }
+
+  .projetos-section .projetos-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 16px;
+  }
+
+  .projetos-section .projetos-grid div h1 {
+    font-size: 38px;
+    text-align: left;
+  }
+
+  .projetos-section .projetos-grid .card {
+    height: 450px;
+  }
+
+  .projetos-section {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projetos-header {
+    padding: 20px 12px 20px;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .projetos-header .projetos-tittle h1 {
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+    white-space: normal;
+  }
+
+  .projetos-header .projetos-text {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .projetos-section .projetos-grid {
+    padding: 0 12px;
+    gap: 20px;
+  }
+
+  .projetos-section .projetos-grid div h1 {
+    font-size: 28px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .projetos-section .projetos-grid div p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .projetos-section .projetos-grid .card {
+    height: 350px;
+  }
+
+  .projetos-section {
+    margin-bottom: 40px;
+  }
 }

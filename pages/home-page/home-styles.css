@@ -35,6 +35,8 @@
 
 .sobre-section {
   display: flex;
+  flex-direction: row;
+  gap: 20px;
   margin-top: 60px;
   border-top: 1px solid #787878;
   margin-left: 60px;
@@ -452,15 +454,34 @@ button {
   .quem-somos-section {
     margin: 12px 40px;
   }
-  .tittle-section,
-  .hero-section h1 {
+
+  .tittle-sectiont {
     font-size: 100px;
   }
+
+  .sobre-section p {
+    font-size: 24px;
+  }
+  .sobre-section nav li a {
+    font-size: 32px;
+  }
+
+  .projetos-section .projetos-grid .card .card-text p {
+    font-size: 20px;
+  }
+
   .quem-somos-section .quem-somos-header .tittle-section {
+    text-align: center;
     font-size: 85px;
   }
-  .sobre-section p {
-    font-size: 20px;
+
+  .quem-somos-section .quem-somos-text p {
+    justify-content: center;
+  }
+
+  .quem-somos-section .quem-somos-text p {
+    text-align: center;
+    font-size: 24px;
   }
 
   .footer-black-section .footer-content {
@@ -503,23 +524,19 @@ button {
   .quem-somos-section {
     margin: 12px 20px;
   }
-  .tittle-section,
-  .hero-section h1 {
+
+  .tittle-section {
     font-size: 70px;
     white-space: normal;
   }
+
   .quem-somos-section .quem-somos-header .tittle-section {
     font-size: 60px;
   }
+
   .sobre-section {
     flex-direction: column;
     gap: 20px;
-  }
-  .sobre-section p {
-    font-size: 18px;
-  }
-  .sobre-section nav li a {
-    font-size: 24px;
   }
 
   .projetos-section .projetos-header button {
@@ -533,9 +550,11 @@ button {
   .projetos-section .projetos-grid {
     grid-template-columns: 1fr;
   }
+
   .projetos-section .projetos-grid .card {
     height: 450px;
   }
+
   .equipa-section {
     height: auto;
     padding-left: 20px;
@@ -547,14 +566,6 @@ button {
     flex-direction: column;
     height: auto;
     gap: 20px;
-  }
-  .quem-somos-section .quem-somos-text p {
-    font-size: 22px;
-    height: auto;
-  }
-  .footer-black-section .pre-footer h1 {
-    font-size: 40px;
-    text-align: center;
   }
 
   .footer-black-section .pre-footer button a {
@@ -613,8 +624,7 @@ button {
   .quem-somos-section {
     margin: 8px 12px;
   }
-  .tittle-section,
-  .hero-section h1 {
+  .tittle-section {
     font-size: 50px;
   }
 

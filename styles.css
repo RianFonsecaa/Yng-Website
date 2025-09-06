@@ -234,7 +234,7 @@ p {
   gap: 40px;
   flex-wrap: wrap;
   position: relative;
-  z-index: 2; /* garante que fiquem na frente do ano */
+  z-index: 2;
 }
 
 .footer-section .footer-content .footer-column {
@@ -243,7 +243,7 @@ p {
   justify-content: space-between;
   gap: 20px;
   min-width: 250px;
-  flex: 1; /* colunas mais fluidas */
+  flex: 1;
 }
 
 .footer-section .footer-content .footer-column h4 {
@@ -306,7 +306,6 @@ p {
   height: 110px;
 }
 
-/* 🔽 Responsividade */
 @media (max-width: 1200px) {
   .footer-section .footer-content {
     padding: 40px;
