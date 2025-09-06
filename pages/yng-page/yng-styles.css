@@ -4,41 +4,41 @@
   gap: 83px;
 }
 
+.metricas-section .metricas-tittle {
+  flex: 1;
+}
 .metricas-section .metricas-tittle h1 {
   font-family: "IvyPresto-Thin", sans-serif;
   font-weight: 100;
   font-size: 120px;
   line-height: 1;
   margin: 0;
+  word-break: break-word;
 }
-
 .metricas-section .metricas-text {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  flex: 1;
 }
-
 .metricas-section .metricas-text p {
   font-family: "Degular-Variable", sans-serif;
   font-weight: 100;
   font-size: 32px;
   margin: 0;
 }
-
 .metricas-section .metricas-text .metricas-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   width: 100%;
 }
-
 .metricas-section .metricas-text .metricas-grid div h1 {
   font-family: "Degular-Variable", sans-serif;
   font-weight: 400;
   font-size: 60px;
   margin: 0;
 }
-
 .metricas-section .metricas-text .metricas-grid div p {
   font-family: "Degular-Variable", sans-serif;
   font-weight: 100;
@@ -47,47 +47,46 @@
 }
 
 .apresentacao-section {
+  display: flex;
+  flex-direction: column;
   position: relative;
+  height: auto;
   margin: 12px 60px 60px;
-  height: 900px;
+  align-items: start;
 }
 
 .apresentacao-section img {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .apresentacao-section .apresentacao-text {
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
-  padding-left: 100px;
-  padding-bottom: 87px;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   z-index: 2;
   color: white;
-}
-
-.apresentacao-section .apresentacao-text .apresentacao-tittle {
-  margin-bottom: 68px;
+  display: flex;
+  gap: 68px;
+  flex-direction: column;
+  padding: 50px 100px 87px;
+  width: 100%;
 }
 .apresentacao-section .apresentacao-text .apresentacao-tittle h1 {
   font-family: "IvyPresto-Thin", sans-serif;
   font-weight: 100;
   font-size: 120px;
   margin-bottom: 0;
-  padding-left: 219px;
+  padding-left: 210px;
 }
-
 .apresentacao-section .apresentacao-text .apresentacao-tittle h1:last-child {
   padding-left: 290px;
 }
-
+.apresentacao-section .apresentacao-text div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .apresentacao-section .apresentacao-text p {
   font-family: "Degular-Variable", sans-serif;
   font-weight: 100;
@@ -95,7 +94,8 @@
   color: white;
   line-height: 1.3;
   margin: 0;
-  width: 900px;
+  max-width: 900px;
+  width: 100%;
 }
 
 .divider {
@@ -104,43 +104,40 @@
 }
 
 .parceiros-section {
-  margin-left: 26px;
-  margin-right: 26px;
+  margin: 0 26px;
 }
-
 .parceiros-section div {
   display: flex;
-  justify-content: space-between;
-  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
   width: 100%;
   margin: 0;
 }
-
 .parceiros-section .logo {
   width: fit-content;
   border: none;
   background-color: transparent;
 }
-
 .parceiros-section .logo img {
   filter: grayscale(100%);
   transition: filter 0.3s ease;
+  max-width: 100%;
+  height: auto;
 }
-
 .parceiros-section .logo img:hover {
   filter: grayscale(0%);
 }
 
 .equipa-section {
   background-color: black;
-  height: 780px;
   margin-top: 73px;
   margin-bottom: 0;
   padding-top: 24px;
   padding-left: 60px;
   padding-bottom: 150px;
+  width: 100%;
 }
-
 .equipa-section .equipa-header .tittle-section {
   color: white;
   font-family: "IvyPresto", sans-serif;
@@ -148,32 +145,177 @@
   font-size: 120px;
   margin-bottom: 0;
 }
-
 .owl-carousel .card .card-top-text p {
   color: #e74f3d !important;
   font-family: "Degular-Medium", sans-serif !important;
 }
-
 .owl-carousel .card .card-bottom-text h5 {
   color: white !important;
 }
-
 .owl-carousel .card img {
   filter: grayscale(100%);
+  max-width: 100%;
+  height: auto;
 }
-
 .owl-carousel .card:hover img {
   filter: grayscale(0%);
-}
-
-.owl-carousel .card:hover img {
   height: 420px;
   object-fit: cover;
   display: block;
 }
-
 .equipa-section .carousel-button .btn-nav h1 {
   font-size: 60px;
   font-family: "Poppins-Light", sans-serif;
   color: white;
+}
+
+@media (max-width: 1200px) {
+  .metricas-section {
+    padding: 40px 60px;
+    gap: 60px;
+  }
+  .metricas-section .metricas-tittle h1 {
+    font-size: 100px;
+  }
+  .apresentacao-section {
+    margin: 12px 40px 40px;
+  }
+  .apresentacao-section .apresentacao-text .apresentacao-tittle h1 {
+    padding-left: 0;
+    font-size: 100px;
+  }
+  .apresentacao-section .apresentacao-text .apresentacao-tittle h1:last-child {
+    padding-left: 0;
+  }
+  .equipa-section .equipa-header .tittle-section {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .metricas-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+  .metricas-section .metricas-tittle h1 {
+    font-size: 70px;
+  }
+  .metricas-section .metricas-text p {
+    font-size: 22px;
+  }
+  .metricas-section .metricas-text .metricas-grid div h1 {
+    font-size: 38px;
+  }
+  .metricas-section .metricas-text .metricas-grid div p {
+    font-size: 18px;
+  }
+
+  .apresentacao-section {
+    margin: 12px 30px 30px;
+  }
+  .apresentacao-section .apresentacao-text {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+  .apresentacao-section .apresentacao-text .apresentacao-tittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .apresentacao-section .apresentacao-text .apresentacao-tittle h1 {
+    padding-left: 0;
+    font-size: 70px;
+  }
+  .apresentacao-section .apresentacao-text .apresentacao-tittle h1:last-child {
+    padding-left: 0;
+  }
+  .apresentacao-section .apresentacao-text p {
+    font-size: 22px;
+    max-width: 100%;
+  }
+
+  .equipa-section .equipa-header .tittle-section {
+    font-size: 70px;
+  }
+  .equipa-section .carousel-button .btn-nav h1 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 600px) {
+  .metricas-section {
+    padding: 20px;
+    gap: 20px;
+  }
+  .metricas-section .metricas-tittle h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .metricas-section .metricas-text p {
+    font-size: 18px;
+  }
+  .metricas-section .metricas-text .metricas-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .metricas-section .metricas-text .metricas-grid div h1 {
+    font-size: 28px;
+  }
+  .metricas-section .metricas-text .metricas-grid div p {
+    font-size: 16px;
+  }
+
+  .apresentacao-section {
+    margin: 12px 20px 20px;
+  }
+  .apresentacao-section .apresentacao-text {
+    padding: 20px;
+    gap: 30px;
+  }
+  .apresentacao-section .apresentacao-text .apresentacao-tittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .apresentacao-section .apresentacao-text .apresentacao-tittle h1 {
+    padding-left: 0;
+    font-size: 45px;
+  }
+  .apresentacao-section .apresentacao-text .apresentacao-tittle h1:last-child {
+    padding-left: 0;
+  }
+  .apresentacao-section .apresentacao-text p {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .parceiros-section div {
+    gap: 30px;
+  }
+  .parceiros-section .logo img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .equipa-section .equipa-header .tittle-section {
+    font-size: 45px;
+    text-align: center;
+  }
+  .equipa-section .carousel-button .btn-nav h1 {
+    font-size: 28px;
+  }
+
+  .footer-section .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .footer-section .links {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
 }

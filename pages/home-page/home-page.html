@@ -42,8 +42,65 @@
             <li class="nav-item">
               <a class="nav-link" href="#">SOBRE</a>
             </li>
-            <li class="nav-item">
+
+            <li class="nav-item dropdown">
               <a class="nav-link" href="#">PROJETOS</a>
+              <div class="dropdown-menu">
+                <div class="dropdown-links">
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        class="dropdown-item"
+                        data-target="descricao-1"
+                        >Marketing Digital</a
+                      >
+                      <div id="descricao-1" class="content-panel">
+                        <h3>Marketing Digital</h3>
+                        <p>
+                          Desenvolvemos estratégias de marketing digital
+                          completas, focadas em resultados e no crescimento do
+                          seu negócio online...
+                        </p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        class="dropdown-item"
+                        data-target="descricao-2"
+                        >Relações Públicas</a
+                      >
+                      <div id="descricao-2" class="content-panel">
+                        <h3>Relações Públicas</h3>
+                        <p>
+                          Construímos e protegemos a reputação da sua marca,
+                          criando conexões valiosas com o público e a
+                          imprensa...
+                        </p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        class="dropdown-item"
+                        data-target="descricao-3"
+                        >Criatividade</a
+                      >
+                      <div id="descricao-3" class="content-panel">
+                        <h3>Criatividade</h3>
+                        <p>
+                          Nossa equipe criativa desenvolve conceitos inovadores
+                          e campanhas memoráveis que capturam a atenção e geram
+                          engajamento...
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">CONTACTOS</a>
@@ -61,7 +118,7 @@
       >
         <h1>Leading Brave Brands.</h1>
       </div>
-      -->
+                  -->
       <video controls>
         <source src="/video/Relaxing nature 4k.mp4" type="video/mp4" />
       </video>
@@ -326,7 +383,23 @@
           nav: false,
           dots: false,
           responsive: {
+            0: {
+              items: 2,
+            },
+
+            600: {
+              items: 3,
+            },
+
             1000: {
+              items: 4,
+            },
+
+            1400: {
+              items: 5,
+            },
+
+            1800: {
               items: 6,
             },
           },

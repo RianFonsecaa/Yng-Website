@@ -78,7 +78,8 @@
 }
 
 .sobre-section p {
-  width: 734px;
+  max-width: 734px;
+  width: 100%;
   font-size: 24px;
 }
 
@@ -103,9 +104,7 @@
   justify-content: center;
   align-items: center;
   border: 1px solid black;
-  padding: 16px 0px;
-  height: 85px;
-  width: 407px;
+  padding: 16px;
   background-color: transparent;
   gap: 27px;
 }
@@ -193,6 +192,7 @@
   margin: 0;
   font-size: 23px;
   font-weight: 400;
+  color: white;
 }
 
 .projetos-section .projetos-grid .card::after {
@@ -226,7 +226,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 780px;
+  min-height: 780px;
   display: flex;
   padding-left: 60px;
   padding-top: 43px;
@@ -275,7 +275,8 @@
   font-size: 105px;
   font-family: "Degular-Variable", sans-serif;
   font-weight: 500;
-  width: 690px;
+  max-width: 690px;
+  width: 100%;
   text-align: left;
   letter-spacing: 0px;
   opacity: 1;
@@ -286,7 +287,8 @@
   display: flex;
   align-items: end;
   font-size: 32px;
-  width: 933px;
+  max-width: 933px;
+  width: 100%;
   text-align: left;
   letter-spacing: 0px;
   opacity: 1;
@@ -441,4 +443,209 @@ button {
   color: white;
   opacity: 44%;
   font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .hero-section,
+  .sobre-section,
+  .projetos-section,
+  .quem-somos-section {
+    margin: 12px 40px;
+  }
+  .tittle-section,
+  .hero-section h1 {
+    font-size: 100px;
+  }
+  .quem-somos-section .quem-somos-header .tittle-section {
+    font-size: 85px;
+  }
+  .sobre-section p {
+    font-size: 20px;
+  }
+
+  .footer-black-section .footer-content {
+    gap: 20px;
+    padding: 0 15px;
+    flex-wrap: wrap;
+  }
+
+  .footer-black-section .footer-content .footer-column:last-child {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .footer-black-section .footer-content .social-media {
+    align-items: start;
+  }
+
+  .footer-black-section .footer-content .footer-column .slogan {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 10px;
+  }
+
+  .footer-black-section .footer-content .footer-column .slogan p {
+    text-wrap: nowrap;
+    text-align: start;
+  }
+
+  .footer-black-section .footer-content .footer-column .slogan p:last-child {
+    grid-column: 1 / span 2;
+    text-align: end;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-section,
+  .sobre-section,
+  .projetos-section,
+  .quem-somos-section {
+    margin: 12px 20px;
+  }
+  .tittle-section,
+  .hero-section h1 {
+    font-size: 70px;
+    white-space: normal;
+  }
+  .quem-somos-section .quem-somos-header .tittle-section {
+    font-size: 60px;
+  }
+  .sobre-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sobre-section p {
+    font-size: 18px;
+  }
+  .sobre-section nav li a {
+    font-size: 24px;
+  }
+
+  .projetos-section .projetos-header button {
+    gap: 10px;
+  }
+
+  .projetos-section .projetos-header button a {
+    font-size: 30px;
+  }
+
+  .projetos-section .projetos-grid {
+    grid-template-columns: 1fr;
+  }
+  .projetos-section .projetos-grid .card {
+    height: 450px;
+  }
+  .equipa-section {
+    height: auto;
+    padding-left: 20px;
+  }
+  .equipa-section::before {
+    width: 100%;
+  }
+  .quem-somos-section {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  .quem-somos-section .quem-somos-text p {
+    font-size: 22px;
+    height: auto;
+  }
+  .footer-black-section .pre-footer h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .footer-black-section .pre-footer button a {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .footer-black-section .footer-content .footer-column p {
+    padding: 0;
+  }
+
+  .footer-black-section .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .footer-black-section .footer-content .footer-column:last-child {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer-black-section .footer-content .footer-column .slogan {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 10px;
+  }
+
+  .footer-black-section .footer-content .footer-column .slogan p:last-child {
+    grid-column: 1 / span 2;
+    text-align: center;
+  }
+
+  .footer-black-section
+    .footer-content
+    .footer-column:last-child
+    .social-media {
+    align-self: center;
+    flex-direction: row;
+  }
+
+  .footer-black-section .links {
+    justify-content: center;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section,
+  .sobre-section,
+  .projetos-section,
+  .quem-somos-section {
+    margin: 8px 12px;
+  }
+  .tittle-section,
+  .hero-section h1 {
+    font-size: 50px;
+  }
+
+  .projetos-section .projetos-header {
+    flex-direction: column;
+  }
+  .projetos-section .projetos-header button a {
+    font-size: 25px;
+  }
+
+  .quem-somos-section .quem-somos-header .tittle-section {
+    font-size: 42px;
+  }
+  .sobre-section nav li a,
+  .sobre-section p {
+    font-size: 18px;
+  }
+
+  .footer-black-section .footer-content .footer-column p {
+    padding: 0;
+  }
+
+  .footer-black-section .links {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .footer-black-section .pre-footer h1 {
+    font-size: 28px;
+  }
+  .footer-black-section .pre-footer button a {
+    font-size: 22px;
+  }
 }
