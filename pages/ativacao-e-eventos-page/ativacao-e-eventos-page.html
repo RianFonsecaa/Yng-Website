@@ -15,33 +15,232 @@
   </head>
   <body>
     <header class="header-section">
-      <nav class="navbar navbar-expand-lg navbar-light container-fluid">
-        <a class="navbar-brand" href="#">
+      <nav
+        class="navbar navbar-light navbar-expand-lg d-none d-lg-flex container-fluid desktop-navbar"
+      >
+        <a class="navbar-brand" href="/pages/home-page/home-page.html">
           <img
             src="/img/logo-yng.jpg"
             alt="Logo da empresa Young Network Group"
           />
         </a>
+
         <div
           class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">YNG</a>
+              <a class="nav-link" href="/pages/yng-page/yng-page.html">YNG</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SOBRE</a>
+              <a class="nav-link" href="#" id="sobre-link">SOBRE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PROJETOS</a>
+              <a class="nav-link" href="/pages/projetos-page/projetos-page.html"
+                >PROJETOS</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACTOS</a>
+              <a class="nav-link" href="">CONTACTOS</a>
             </li>
           </ul>
         </div>
       </nav>
+
+      <nav
+        class="navbar navbar-light d-lg-none container-fluid flex-column mobile-navbar"
+      >
+        <div
+          class="d-flex w-100 justify-content-between align-items-center mb-2"
+        >
+          <a class="navbar-brand" href="#">
+            <img
+              src="/img/logo-yng.jpg"
+              alt="Logo da empresa Young Network Group"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobileNav"
+            aria-controls="mobileNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse d-lg-none" id="mobileNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/yng-page/yng-page.html">YNG</a>
+            </li>
+
+            <li class="nav-item nav-acordeon">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#sobreAccordion"
+                role="button"
+                aria-expanded="false"
+                aria-controls="sobreAccordion"
+              >
+                SOBRE
+              </a>
+              <div class="collapse subpages-collapse" id="sobreAccordion">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/cases-page/cases-page.html"
+                      >Marketing Digital</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/home-page/home-page.html"
+                      >Relações Públicas</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/pages/criatividade-page/criatividade-page.html"
+                      >Criatividade</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/pages/ativacao-e-eventos-page/ativacao-e-eventos-page.html"
+                      >Eventos e Ativação</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/home-page/home-page.html"
+                      >Relações Públicas</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/projetos-page/projetos-page.html"
+                >PROJETOS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">CONTACTOS</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="mega-dropdown">
+        <ul class="dropdown-nav">
+          <li>
+            <div>
+              <a href="/pages/cases-page/cases-page.html">Marketing Digital</a>
+              <img
+                src="/img/right-orange-arrow.png"
+                alt="Imagem de seta laranja para direita"
+              />
+            </div>
+            <div class="description">
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque.
+              </p>
+              <p>
+                Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="/pages/home-page/home-page.html">Relações Públicas</a>
+              <img
+                src="/img/right-orange-arrow.png"
+                alt="Imagem de seta laranja para direita"
+              />
+            </div>
+            <div class="description">
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque.
+              </p>
+              <p>
+                Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="/pages/criatividade-page/criatividade-page.html"
+                >Criatividade</a
+              >
+              <img
+                src="/img/right-orange-arrow.png"
+                alt="Imagem de seta laranja para direita"
+              />
+            </div>
+            <div class="description">
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque.
+              </p>
+              <p>
+                Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a
+                href="/pages/ativacao-e-eventos-page/ativacao-e-eventos-page.html"
+                >Eventos e Ativação</a
+              >
+              <img
+                src="/img/right-orange-arrow.png"
+                alt="Imagem de seta laranja para direita"
+              />
+            </div>
+            <div class="description">
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque.
+              </p>
+              <p>
+                Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="/pages/home-page/home-page.html">Relações Públicas</a>
+              <img
+                src="/img/right-orange-arrow.png"
+                alt="Imagem de seta laranja para direita"
+              />
+            </div>
+            <div class="description">
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque.
+              </p>
+              <p>
+                Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <section class="ativacao-section">
@@ -51,7 +250,7 @@
           E EVENTOS
         </h1>
 
-        <img src="img/tenis-reebok.jpg" alt="" />
+        <img src="img/tenis-reebok.jpg" alt="Imagem de tenis da Reebok" />
       </div>
 
       <div class="ativacao-text">
@@ -121,7 +320,10 @@
     </section>
 
     <section class="ativacao-carmen-section">
-      <img src="img/ativacao-carmen-section.jpg" alt="" />
+      <img
+        src="img/ativacao-carmen-section.jpg"
+        alt="Imagem artística conceitual"
+      />
 
       <div class="ativacao-carmen-text">
         <h1>ATIVAÇÃO DE MARCA E EVENTOS<br />NA CARMEN</h1>
@@ -197,6 +399,8 @@
       </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/main.js"></script>
   </body>
 </html>
