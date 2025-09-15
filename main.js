@@ -1,3 +1,4 @@
+/* Carrossel */
 $(document).ready(function () {
   var owlCarousel = $(".owl-carousel");
 
@@ -29,11 +30,12 @@ $(document).ready(function () {
     },
   });
 
-  $("#equipa-next").click(function () {
+  $(".equipa-next").click(function () {
     owlCarousel.trigger("next.owl.carousel");
   });
 });
 
+/* Mega-dropdown */
 const sobreLink = document.getElementById("sobre-link");
 const megaDropdown = document.querySelector(".header-section .mega-dropdown");
 const firstItem = megaDropdown.querySelector("li:first-child");
@@ -60,7 +62,7 @@ sobreLink.addEventListener("click", (e) => {
   megaDropdown.classList.toggle("active");
 });
 
-["click", "scroll", "resize", "wheel", "touchstart"].forEach((evt) => {
+["resize"].forEach((evt) => {
   window.addEventListener(evt, (e) => {
     if (
       evt === "click" &&
@@ -73,4 +75,49 @@ sobreLink.addEventListener("click", (e) => {
 
 megaDropdown.querySelectorAll("li").forEach((item) => {
   item.addEventListener("mouseenter", () => setActive(item));
+});
+
+/* Botão para controle do vídeo */
+
+document.addEventListener("click", (e) => {
+  const container = e.target.closest(".video-section");
+  if (!container) return;
+
+  const video = container.querySelector(".video");
+  const botao = container.querySelector(".custom-video-button");
+
+  if (video.paused) {
+    video.play();
+    container.classList.remove("paused");
+    container.classList.add("playing");
+    botao.innerHTML = `
+               <svg viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 1H2V15H7V1Z" fill="currentColor"></path> <path d="M14 1H9V15H14V1Z" fill="currentColor"></path> </g></svg>
+      `;
+  } else {
+    video.pause();
+    container.classList.remove("playing");
+    container.classList.add("paused");
+    botao.innerHTML = `
+<svg
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 512 512"
+          enable-background="new 0 0 512 512"
+          xml:space="preserve"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M464.7,221.5L86.1,7.3C52.5-11.7,25,7.5,25,50v412c0,42.5,27.5,61.7,61.1,42.7l378.6-214.1 C498.2,271.5,498.2,240.5,464.7,221.5z"
+            ></path>
+          </g>
+        </svg>
+      `;
+  }
 });
